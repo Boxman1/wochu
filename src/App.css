@@ -31,3 +31,20 @@
     transform: rotate(360deg);
   }
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  touch-action: pan-y;
+  zoom: 1;
+}
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  display: block;
+}
