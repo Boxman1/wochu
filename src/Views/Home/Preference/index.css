@@ -1,0 +1,344 @@
+.all {
+  overflow-y: visible;
+  background: #fff;
+}
+
+.all .temp-list1 {
+  padding-top: .3rem;
+  background: #f4f4f4;
+}
+
+.all .temp-list1 .temp-title {
+  background: #fff;
+  height: auto;
+  min-height: 1rem;
+  text-align: center;
+  font-size: .32rem;
+  font-weight: 600;
+  padding: .3rem 0;
+  line-height: .4rem;
+  color: #001e00;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.all .temp-list1 .temp-title span {
+  width: 1.5rem;
+  height: 1px;
+  display: inline-block;
+  border-bottom: 1px solid #011e00;
+  margin: 0 .22rem;
+}
+
+.all .temp-list1 ul {
+  background: #fff;
+}
+
+.all .temp-list1 ul li {
+  width: 100%;
+  height: 3.12rem;
+  padding: .28rem .24rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.all .temp-list1 ul li .img-view {
+  float: left;
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.all .temp-list1 ul li .img-view img {
+  width: 100%;
+  height: 100%;
+}
+
+.all .temp-list1 ul li .img-view .corner-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.6rem;
+  height: .66rem;
+  z-index: 1;
+}
+
+.all .temp-list1 ul li .temp-goods-info {
+  float: right;
+  width: 4.34rem;
+  height: 100%;
+  padding-left: .2rem;
+}
+
+.all .temp-list1 ul li .temp-goods-info .temp-goods-name {
+  height: 1rem;
+  width: 100%;
+  line-height: .36rem;
+  font-size: .32rem;
+  font-weight: 700;
+  letter-spacing: .02rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  padding-top: .32rem;
+}
+
+.all .temp-list1 ul li .temp-goods-info .temp-goods-name span {
+  color: #6eb042;
+  font-size: .32rem;
+  height: .32rem;
+  font-weight: 700;
+  vertical-align: baseline;
+}
+
+.all .temp-list1 ul li .temp-goods-info .goods-intro {
+  width: 100%;
+  height: .56rem;
+  font-size: .26rem;
+  line-height: .56rem;
+  letter-spacing: .01rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: .32rem;
+}
+
+.all .temp-list1 ul li .temp-goods-info .temp-goods-price .price-wrap {
+  float: left;
+  line-height: .5rem;
+}
+
+.all .temp-list1 ul li .temp-goods-info .temp-goods-price .price-wrap .real-price {
+  float: left;
+  color: #ff5918;
+  font-size: .3rem;
+}
+
+.all .temp-list1 ul li .temp-goods-info .temp-goods-price .price-wrap .real-price .before-point {
+  font-size: .4rem;
+}
+
+.all .temp-list1 ul li .temp-goods-info .temp-goods-price .add-to-cart {
+  float: right;
+  width: .52rem;
+  height: .52rem;
+}
+
+.all .temp-list1 ul li .temp-goods-info .temp-goods-price .add-to-cart img {
+  width: 100%;
+  height: 100%;
+  vertical-align: text-top;
+}
+
+.all .swiperContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.all .swiperContainer .swiper-wrapper {
+  min-height: 3.26rem !important;
+  background: #fff;
+  padding: .26rem 0 0 .2rem;
+  font-size: 0;
+  z-index: 1;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.all .swiperContainer .swiper-wrapper .swiper-slide {
+  height: 3.52rem;
+  margin-right: .36rem;
+  width: 1.9rem;
+  position: relative;
+  vertical-align: top;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.all .swiperContainer .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+
+.all .swiperContainer .swiper-wrapper .swiper-slide .group-name {
+  font-size: .24rem;
+  margin-top: .24rem;
+  width: 1.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.all .swiperContainer .swiper-wrapper .swiper-slide .group-name span {
+  vertical-align: top;
+  font-size: .22rem;
+  color: #6eb042;
+  font-weight: bolder;
+}
+
+.all .swiperContainer .swiper-wrapper .swiper-slide .m-price {
+  height: .24rem;
+  margin-top: .14rem;
+  font-size: .2rem;
+  color: #bababa;
+  text-decoration: line-through;
+}
+
+.all .swiperContainer .swiper-wrapper .swiper-slide .o-price {
+  height: .24rem;
+  margin-top: .1rem;
+  font-size: .24rem;
+  color: #001e00;
+  line-height: .24rem;
+}
+
+.all .swiperContainer .swiper-wrapper .swiper-slide .add-cart {
+  position: absolute;
+  bottom: .01rem;
+  left: 1.42rem;
+  width: .38rem;
+}
+
+.all .swiperContainer .swiper-wrapper .swiper-slide .add-cart img {
+  width: 0.48rem !important;
+  height: 0.48rem !important;
+  float: left;
+}
+
+.all .goods-item-list .goods-item-list3 {
+  padding: .3rem .2rem 0;
+  background: #f4f4f4;
+  height: 5.43rem;
+}
+
+.all .goods-item-list .goods-item-list3 .left-view {
+  background: #fff;
+  width: 3.5rem;
+  height: 5.2rem;
+  border-radius: .06rem;
+  float: left;
+  position: relative;
+  bottom: 0;
+}
+
+.all .goods-item-list .goods-item-list3 .left-view img {
+  border-radius: .06rem;
+  width: 100%;
+  height: 100%;
+}
+
+.all .goods-item-list .goods-item-list3 .right-view {
+  width: 3.5rem;
+  height: 5.2rem;
+  border-radius: .06rem;
+  background: #fff;
+  float: right;
+}
+
+.all .goods-item-list .goods-item-list3 .right-view .rt-top-view {
+  height: 2.6rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.all .goods-item-list .goods-item-list3 .right-view .rt-top-view img {
+  width: 100%;
+  height: 100%;
+}
+
+.all .goods-item-list .goods-item-list3 .right-view .rt-bottom-view {
+  height: 2.6rem;
+}
+
+.all .goods-item-list .goods-item-list3 .right-view .rt-bottom-view img {
+  width: 100%;
+  height: 100%;
+}
+
+.all .all {
+  height: 11.8rem;
+  margin-top: 0.1rem;
+}
+
+.all .all .img-link {
+  background: #f8f8f8;
+}
+
+.all .all .img-link img {
+  width: 7.5rem;
+  height: 3.04rem;
+  margin-bottom: .08rem;
+}
+
+.all .all .goods-item-list6 {
+  width: 100%;
+}
+
+.all .all .goods-item-list6 .goods-list ul li {
+  width: 2.26rem;
+  height: 3.46rem;
+  margin-top: .28rem;
+  margin-right: .08rem;
+  text-decoration: none;
+  color: #000;
+  float: left;
+}
+
+.all .all .goods-item-list6 .goods-list ul li img {
+  width: 2.26rem;
+  height: 2.26rem;
+}
+
+.all .all .goods-item-list6 .goods-list ul li .goods-name {
+  width: 100%;
+  height: .58rem;
+  font-size: .26rem;
+  line-height: .25rem;
+  padding-top: .08rem;
+  color: #333;
+  overflow: hidden;
+}
+
+.all .all .goods-item-list6 .goods-list ul li .price-cart {
+  height: .64rem;
+  margin-top: .08rem;
+}
+
+.all .all .goods-item-list6 .goods-list ul li .price-cart .price-ctl {
+  height: .64rem;
+  width: 1.6rem;
+  float: left;
+}
+
+.all .all .goods-item-list6 .goods-list ul li .price-cart .price-ctl .market-price {
+  height: .24rem;
+  font-size: .24rem;
+  color: #999;
+  text-decoration: line-through;
+  line-height: .24rem;
+  height: auto;
+}
+
+.all .all .goods-item-list6 .goods-list ul li .price-cart .price-ctl .price {
+  height: .3rem;
+  font-size: .3rem;
+  color: #f96d16;
+  line-height: .3rem;
+  margin-top: .1rem;
+}
+
+.all .all .goods-item-list6 .goods-list ul li .price-cart .addCart {
+  width: .66rem;
+  height: .54rem;
+  line-height: .54rem;
+  float: right;
+  text-align: center;
+}
+
+.all .all .goods-item-list6 .goods-list ul li .price-cart .addCart img {
+  width: 0.48rem !important;
+  height: 0.48rem !important;
+  position: relative;
+  top: -0.6rem;
+  left: 0.7rem;
+}

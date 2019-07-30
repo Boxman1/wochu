@@ -1,0 +1,70 @@
+.broadcast {
+  border-top: 1px solid #e5e5e5;
+  background: white;
+  height: 1.2rem;
+}
+
+.broadcast .broadcast-title {
+  width: 1.08rem;
+  float: left;
+  padding: .24rem 0 0 .24rem;
+}
+
+.broadcast .broadcast-title img {
+  position: absolute;
+  top: .24rem;
+  width: .84rem;
+  height: .6rem;
+  border-right: 1px solid #e5e5e5;
+  padding-right: .24rem;
+}
+
+.broadcast .broadcast-content {
+  width: 6.42rem;
+  float: right;
+}
+
+.broadcast .broadcast-content .scroll-content {
+  width: 100%;
+  height: 1.14rem;
+  overflow: hidden;
+}
+
+.broadcast .broadcast-content .scroll-content ul {
+  transform: translateY(-114px);
+}
+
+.broadcast .broadcast-content .scroll-content ul li {
+  width: 100%;
+  height: 1.14rem;
+  padding: 2.7rem .9rem .24rem .26rem;
+  color: #001e00;
+  font-size: .26rem;
+  line-height: 1;
+}
+
+.broadcast .show-all {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 1.14rem;
+  width: .9rem;
+}
+
+.broadcast .show-all img {
+  position: absolute;
+  top: .49rem;
+  width: .3rem;
+  height: .16rem;
+  right: .24rem;
+}
+
+.img-link {
+  background: #f8f8f8;
+}
+
+.img-link img {
+  width: 7.5rem;
+  height: 3.04rem;
+  margin-bottom: .08rem;
+}

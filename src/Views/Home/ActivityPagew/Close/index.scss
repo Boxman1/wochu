@@ -1,0 +1,78 @@
+.grup-img {
+    width: 100%;
+    img{
+        width: 100%;
+    }
+    .group-title {
+        width: 100%;
+        padding: 0 .2rem;
+         .title {
+            font-size: .36rem;
+            color: #333;
+            line-height: .8rem;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+         .desc {
+            font-size: .26rem;
+            line-height: .3rem;
+            color: #999;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    .price-ctl {
+        line-height: .74rem;
+        margin: .3rem 0;
+     .price {
+            width: 5.1rem;
+            text-align: left;
+            color: #999;
+            font-size: .3rem;
+            float: left;
+           .rmb {
+                color: #ff701e;
+                vertical-align: sub;
+                font-weight: bolder;
+            }
+          .price-rmb {
+                color: #ff701e;
+                font-size: .48rem;
+                font-weight: bolder;
+            }
+            i{
+                text-decoration: line-through;
+                font-style: normal;
+                vertical-align: sub;
+            }
+            .mem-limit {
+                margin-left: .1rem;
+                padding-right: .1rem;
+                border-radius: .07rem;
+                font-size: .3rem;
+                color: #ff5918;
+                border: 1px solid #ff5918;
+            }
+        }
+    }
+    .price-ctl .discount-rate {
+        width: 2rem;
+        height: .74rem;
+        line-height: .74rem;
+        text-align: right;
+        float: right;
+        font-size: .36rem;
+        color: #ff701e;
+        .open-group {
+            background: #f96d16;
+            color: #fff;
+            font-size: .3rem;
+            text-align: center;
+            border-radius: .35rem;
+        }
+    }
+}
