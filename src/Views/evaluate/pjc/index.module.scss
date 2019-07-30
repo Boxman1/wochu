@@ -1,0 +1,67 @@
+.evaluatecontent{
+    background: #fff;
+    min-height: 2rem;
+    padding: .35rem .3rem;
+    border-top: .02rem solid #ccc9c9;
+    img{
+        width: .45rem;
+    vertical-align: top;
+    top: -0.1rem;
+    display: inline-block;
+    }
+    .personrank {
+        /* width: 2.72rem; */
+        margin-left: .15rem;
+        display: inline-block;
+        overflow: hidden;
+        width: 2rem;
+        height: .8rem;
+         .username {
+            display: inline-block;
+            width: 100%;
+            font-size: .26rem;
+            font-weight: bold;
+            color: #333;
+            height: .3rem;
+            line-height: .3rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .starrank {
+            /* margin-left: .8rem; */
+            font-size: .24rem;
+            display: inline-block;
+            height: .5rem;
+            /* display: none; */
+            /* left: -1rem; */
+            img {
+                width: .22rem;
+                top: .1rem;
+            }
+        }
+        
+    }
+}
+.marktime {
+    display: inline-block;
+    float: right;
+    p {
+        font-size: .26rem;
+        color: #999;
+    }
+}
+.markWrap {
+    margin-top: .25rem;
+    width: 91%;
+    margin-left: 10%;
+     p {
+        font-size: .26rem;
+        color: #999;
+    }
+}
+.loder{
+    z-index: 100;
+    position: absolute;
+    
+}

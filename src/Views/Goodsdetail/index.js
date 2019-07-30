@@ -112,7 +112,7 @@ class Hotlist extends React.Component{
 
 
                 
-                <div className={css.rate}>
+                <div className={css.rate} onClick={()=>{this.evaluate(this.state.foodlist.goodsSn)}}>
                         <span>商品评价</span>
                         <img src={require("./imgs/next.png")} alt=""/>
                 </div>
@@ -217,6 +217,10 @@ class Hotlist extends React.Component{
         this.setState({
             isShow:true
         })
+    }
+    evaluate=(id)=>{
+        this.props.history.push(`/evaluate/${id}`)
+        localStorage.setItem('id',id)
     }
     
 }
