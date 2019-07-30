@@ -8,9 +8,14 @@ import Search from '../Views/Search/index'
 import  Cart from '../Views/Cart/index'
 import Personal  from '../Views/Personal/index'
 import Hotlist from '../Views/Hotlist/index'
+<<<<<<< HEAD
 import Login from '../Views/Login'
 import ActivityTemplate from '../Views/ActivityTemplate'
 
+=======
+import Goodsdetail from '../Views/Goodsdetail/index'
+import Evaluate from '../Views/evaluate/index'
+>>>>>>> ec63635face74084a3df8234c74a6f8438c6464f
 const router = <Router>
     <App>
         <Switch>
@@ -27,7 +32,10 @@ const router = <Router>
             <Route path='/reclassify/:id' component={Reclassify}></Route>
             <Route path="/search" component={Search}></Route>
             <Route path="/searchResult" component={Search}></Route>
+            <Route path='/goodsdetail/:id' component={Goodsdetail}></Route>
+            <Route path='/evaluate/:id' component={Evaluate}></Route>
             <Redirect from='/' to='/home'></Redirect>
+            
         </Switch>
     </App>
 </Router>

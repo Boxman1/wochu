@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Navbar from './Components/Navbar'
+// import Navbar from './Components/Navbar'
 
 class App extends React.Component{
 
@@ -11,7 +11,7 @@ class App extends React.Component{
               this.props.children
             }
             {
-              <Navbar></Navbar>
+              // <Navbar></Navbar>
             }
           </div> 
   }

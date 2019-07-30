@@ -6,6 +6,25 @@
 html,body{
   width: 100%
 }
+<<<<<<< HEAD
 li{
   list-style: none
+=======
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  touch-action: pan-y;
+  zoom: 1;
+}
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  display: block;
+>>>>>>> ec63635face74084a3df8234c74a6f8438c6464f
 }

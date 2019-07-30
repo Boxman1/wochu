@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import axios from 'axios'
 import Header from './Header'
 import css from './index.module.scss'
@@ -18,6 +19,9 @@ class Hotlist extends React.Component{
         // console.log(id)
     }
     
+=======
+class Goodsdetail extends React.Component{
+>>>>>>> ec63635face74084a3df8234c74a6f8438c6464f
     render(){
             // console.log(this.props.match.params.url);
         return (<div>
@@ -46,4 +50,4 @@ class Hotlist extends React.Component{
         </div>)
     }
 }
-export default Hotlist
+export default Goodsdetail
