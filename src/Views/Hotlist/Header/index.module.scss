@@ -1,0 +1,57 @@
+.header{
+    position: fixed;
+    width: 100%;
+    height: .9rem;
+    line-height: .9rem;
+    color: #333;
+    font-size: .3rem;
+    background: #ffffff;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border-bottom: .02rem solid #e5e5e5;
+    .back{
+        height: 100%;
+        box-sizing: border-box;
+        width: 1.4rem;
+        float: left;
+        text-align: center;
+        img{
+            padding-top: .16rem;
+            height: .64rem;
+            width: auto;
+        }
+    }
+    .parent{
+        width: 4.22rem;
+        float: left;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .cart{
+        width: 1.4rem;
+        float: right;
+        text-align: right;
+        box-sizing: border-box;
+        margin-right: .1rem;
+        height: 100%;
+        img{
+            width: .44rem;
+            height: .44rem;
+            margin: .3rem .2rem 0 0;
+        }
+        span{
+            position: absolute;
+            height: .3rem;
+            width: .3rem;
+            top: .2rem;
+            right: .18rem;
+            font-size: .24rem;
+            background: #ee7c1b;
+            border-radius: 50%;
+            line-height: .3rem;
+            color: #fff;
+            text-align: center;
+        }
+    }
+}

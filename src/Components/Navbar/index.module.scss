@@ -1,0 +1,64 @@
+.myactive{
+    color: greenyellow;
+    // background: url(http://wmall.wochu.cn/h5/img/vueCommon/my_r.png) no-repeat center
+}
+nav{
+    height: 1rem;
+    background: #fff;
+    border-top: 1px solid #e5e5e5;
+    padding: .08rem 0 .06rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    ul{
+        display: table;
+        width: 100%;
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        li{
+            width: 25%;
+            float: left;
+            text-align: center;
+            vertical-align: middle;
+            font-size: .22rem;
+            line-height: .44rem;
+            display: list-item;
+            a{
+                height: 100%;
+                font-size: 100%;
+                color: #999;
+                text-decoration: none;
+                display: block;
+                line-height: 1.4;
+                i{
+                    background-size: cover;
+                    height: .58rem;
+                    width: .58rem;
+                    display: block;
+                    margin: 0 auto;
+                    position: relative;
+                    font-size: 12px;
+                }
+                .i1{
+                    background: url(../../img/nav1.png) no-repeat bottom;
+                }
+                .i2{
+                    background: url(../../img/nav2.png) no-repeat bottom;
+                }
+                .i3{
+                    background: url(../../img/nav3.png) no-repeat bottom;
+                }
+                .i4{
+                    background: url(../../img/nav4.png) no-repeat bottom;
+                }
+            }
+        }
+    }
+}
