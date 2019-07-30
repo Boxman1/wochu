@@ -1,0 +1,39 @@
+.logintop{
+    position: relative;
+    width: 7.5rem;
+    height: 7.84rem;
+    img{
+        width: 100%
+    }
+    .close{
+        position: absolute;
+        top: .46rem;
+        right: .4rem;
+        width: .48rem;
+        display: block;
+    }
+}
+.logintab{
+    background: #fff;
+    height: .96rem;
+    padding: 0 1.4rem;
+    ul{
+        height: 100%;
+        li{
+            width: 1.8rem;
+            border-bottom: .04rem solid #fff;
+            font-size: .32rem;
+            text-align: center;
+            line-height: .96rem;
+            float: left;
+            color: #999;
+        }
+        li:nth-of-type(2){
+            margin-left: 1.1rem;
+        }
+        .active{
+            border-bottom: .04rem solid #6eb242;
+            color: #6eb242
+        }
+    }
+}
