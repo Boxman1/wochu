@@ -23,7 +23,7 @@ class Evaluate extends React.Component{
         return(
             <div>
                 <header>
-                    <div className={css.back}>
+                    <div className={css.back} onClick={()=>{this.handleBack()}}>
                         <img src={require('./imgs/back.gif')} alt=""/>
                     </div>
                     <p>评价</p>
@@ -45,7 +45,7 @@ class Evaluate extends React.Component{
                 <div className={css.shopcar}>
                     <span className={css.carimg}>
                         <img src={require('./imgs/cart-icon.png')} alt=""/>
-                        <span class={css.shopnum}>0</span>
+                        <span className={css.shopnum}>0</span>
                     </span>
                     <span className={css.gocheck}>立即结算吧>></span>
                     <span className={css.carbtn}>加入购物车</span>
@@ -70,6 +70,9 @@ class Evaluate extends React.Component{
             default:
         }
         
+    }
+    handleBack=()=>{
+        this.props.history.goBack()
     }
 }
 export default Evaluate

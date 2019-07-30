@@ -7,7 +7,7 @@ import Reclassify from '../Views/Reclassify/index'
 import Search from '../Views/Search/index'
 import  Cart from '../Views/Cart/index'
 import Personal  from '../Views/Personal/index'
-import Hotlist from '../Views/Hotlist/index'
+// import Hotlist from '../Views/Hotlist/index'
 import Goodsdetail from '../Views/Goodsdetail/index'
 import Evaluate from '../Views/evaluate/index'
 const router = <Router>
@@ -18,7 +18,7 @@ const router = <Router>
             <Route path='/cart' component={Cart}></Route>
             <Route path='/personal' component={Personal}></Route>
 
-            <Route path='/hotlist' component={Hotlist}></Route>
+            {/* <Route path='/hotlist' component={Hotlist}></Route> */}
             <Route path='/reclassify' component={Reclassify}></Route>
             <Route path="/search" component={Search}></Route>
             <Route path="/searchResult" component={Search}></Route>

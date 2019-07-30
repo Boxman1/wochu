@@ -3,7 +3,12 @@ import axios from 'axios'
 import  css from'./index.module.scss'
 import moment from 'moment'; 
 import InfiniteScroll from 'react-infinite-scroller';
-import { Spin } from 'antd';
+import Xing1 from "../xingxingzujian/xingxing1"
+import Xing2 from "../xingxingzujian/xingxing2"
+import Xing3 from "../xingxingzujian/xingxing3"
+import Xing4 from "../xingxingzujian/xingxing4"
+import Xing5 from "../xingxingzujian/xingxing5"
+
 
 class Qp extends React.Component{
     
@@ -21,7 +26,7 @@ return new Date(data)
  };
     componentWillMount(){
         
-        axios.get(`http://api9.wochu.cn/client/v1/satisfaction/goods/list?parameters=%7B%22goodsSn%22%3A%22${this.props.item}%22%2C%22pageSize%22%3A10%2C%22pageIndex%22%3A1%2C%22memberId%22%3A%22%22%2C%22commentFlag%22%3A%22%22%7D`).then(
+        axios.get(`http://api9.wochu.cn/client/v1/satisfaction/goods/list?parameters=%7B%22goodsSn%22%3A%22${localStorage.getItem('id')}%22%2C%22pageSize%22%3A10%2C%22pageIndex%22%3A1%2C%22memberId%22%3A%22%22%2C%22commentFlag%22%3A%22%22%7D`).then(
             res=>{
                 this.setState({
                     alllist:res.data.data.items
@@ -71,7 +76,11 @@ return new Date(data)
                            <span className={css.personrank}>
                                <p className={css.username}>{item.alias}</p>
                                <span className={css.starrank} ref="zbt">
-                               <div style={{
+                                   {
+                                       this.xingxing(item.goodsSatisfyLevel)
+                                   }
+
+                               {/* <div style={{
                                    height:'0.22rem',
                                    overflow:'hidden'
                                }}>
@@ -81,7 +90,8 @@ return new Date(data)
                                         
                                         )
                                     }
-                                    </div>
+                                    </div> */}
+
                                </span>
                            </span>
                            <span className={css.marktime}>
@@ -91,7 +101,17 @@ return new Date(data)
                            </span>
                            <div className={css.markWrap}>
                             { item.goodsComment?<p className={css.markword}>{item.goodsComment}</p> : <p className={css.markword}>用户没有文字评价</p>}
+                            {item.goodsCommentPics?<div className={css.marking}>{item.goodsCommentPics.map(item=><img src={item} alt=""/>)}</div>:null}
+                            {item.srvComment?<div className={css.answer}>
+                               <b>
+                                   <p>客服</p>
+                               </b>
+                               <p className={css.myanswer}>
+                                   {item.srvComment}
+                               </p>
+                           </div>:null}
                            </div>
+                           
                        </ul>
                        </li>):null
                 }
@@ -103,6 +123,22 @@ return new Date(data)
             </div>
         </div>
     }
+    xingxing(data){
+        switch (data) {
+            case 1:
+                return <Xing1/>
+            case 2:
+                return <Xing2/>
+            case 3:
+                return <Xing3/>
+            case 4:
+                return <Xing4/>
+            case 5:
+                return <Xing5/>
+                default:
+        }
+    }
+
     zbt=()=>{
         // console.log(111111111111)
         // if(this.state.oldlist===this.state.newlist.length){
@@ -127,6 +163,9 @@ return new Date(data)
             
         }
         })
+
+    
     }
+    
 }
 export default Qp

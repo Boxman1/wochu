@@ -59,9 +59,33 @@
         font-size: .26rem;
         color: #999;
     }
+    .marking {
+        margin-top: .2rem;
+        img {
+            width: 1.3rem;
+            margin-right: .2rem;
+            margin-bottom: .3rem;
+        }
+    }
+    .answer{
+        border-top: 0.02rem solid #e6e6e6;
+        padding-top: .3rem;
+        overflow: hidden;
+        margin-top: .15rem;
+         b p {
+            color: black;
+        }
+        .myanswer {
+            margin-top: .2rem;
+            font-size: .26rem;
+            color: #999;
+        }
+    }
 }
+
 .loder{
     z-index: 100;
     position: absolute;
     
 }
+
