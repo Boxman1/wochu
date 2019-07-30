@@ -8,6 +8,7 @@ class Searchresult extends React.Component{
         datalist:[],
         length:0
     }
+    timer = null
     componentDidMount() {
         var id = this.props.match.params.id
         id = encodeURI(id)
@@ -16,9 +17,13 @@ class Searchresult extends React.Component{
                 datalist:res.data.data.items,
                 length:res.data.data.items.length
             })
-            console.log(this.state.datalist)
+            // console.log(this.state.datalist)
         })
     }
+    componentWillUnmount() {
+        clearTimeout(this.timer)
+    }
+
     render(){
         return <div>
              <div className={css.header}>
@@ -88,7 +93,7 @@ class Searchresult extends React.Component{
         console.log(id)
         // this.props.history.push(`/goodsdetail/${id}`)
     }
-    searchclick(keyword){
+    searchclick=(keyword)=>{
         var id = encodeURIComponent(keyword)
         if(this.refs.keyword.value){
             this.props.history.push(`/searchResult/${keyword}`)
@@ -115,7 +120,7 @@ class Searchresult extends React.Component{
             this.setState({
                 isShow:true
             })
-            setTimeout(() => {
+            this.timer = setTimeout(() => {
                 this.setState({
                     isShow:false
                 })

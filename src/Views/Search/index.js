@@ -7,8 +7,9 @@ class Search extends React.Component{
     state={
         hotlist:[],
         history:[],
-        isShow:false
+        isShow:false,
     }
+    timer=null
     componentWillMount(){
         if(localStorage.getItem('searchkeywords')){
             this.setState({
@@ -24,6 +25,10 @@ class Search extends React.Component{
             // console.log(this.state.hotlist)
         })
     }
+    componentWillUnmount() {
+        clearTimeout(this.timer)
+    }
+    
     render(){
         return <div>
             <div className={css.header}>
@@ -91,7 +96,7 @@ class Search extends React.Component{
             })
 
     }
-    searchclick(keyword){
+    searchclick=(keyword)=>{
         var id = encodeURIComponent(encodeURIComponent(keyword))
         if(this.refs.mytext.value){
             this.props.history.push(`/searchResult/${id}`)
@@ -113,20 +118,19 @@ class Search extends React.Component{
             this.setState({
                 isShow:true
             })
-           setTimeout(() => {
+           this.timer = setTimeout(() => {
                 this.setState({
                     isShow:false
                 })
             }, 1500);
         }
     }
-    cleanclick=()=>{
+   cleanclick=()=>{
         window.localStorage.removeItem('searchkeywords')
         this.setState({
             history:[]
         })
     }
-    
 }
 
 export default Search

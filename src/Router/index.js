@@ -6,7 +6,7 @@ import Classify from '../Views/Classify/index'
 import Reclassify from '../Views/Reclassify/index'
 import Search from '../Views/Search/index'
 import Searchresult from '../Views/Searchresult/index'
-
+import Login from '../Views/Login/index'
 import  Cart from '../Views/Cart/index'
 import Personal  from '../Views/Personal/index'
 import Hotlist from '../Views/Hotlist/index'
@@ -17,7 +17,7 @@ const router = <Router>
             <Route path='/classify' component={Classify}></Route>
             <Route path='/cart' component={Cart}></Route>
             <Route path='/personal' component={Personal}></Route>
-
+            <Route path='/login' component={Login}></Route>
             <Route path='/hotlist' component={Hotlist}></Route>
             <Route path='/reclassify' component={Reclassify}></Route>
             <Route path="/search" component={Search}></Route>
