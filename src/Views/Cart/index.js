@@ -1,18 +1,4 @@
 import React from 'react'
-<<<<<<< HEAD
-// import axios from 'axios'
-// import {NavLink} from 'react-router-dom'
-// import css from './index.module.scss'
-class Cart extends React.Component{
-    state={
-        datalist:[]
-    }
-    render(){
-        return (
-        <div>    
-        </div>
-    )
-=======
 import './index'
 import axios from 'axios'
 import css from './index.module.scss'
@@ -163,7 +149,6 @@ class Cart extends React.Component{
     clickback(){
         this.props.history.push(`/`)   
         // console.log(this.props) 
->>>>>>> ec63635face74084a3df8234c74a6f8438c6464f
     }
 }
 
