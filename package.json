@@ -15,7 +15,7 @@
     "react-infinite-scroller": "^1.2.4",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "redux": "^4.0.4",
     "sass": "^1.22.7",
     "swiper": "^4.5.0"
